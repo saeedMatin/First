@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">First</string>
+    <string name="center_text">Hello from PSM</string>
+    <string name="Button">Tap me</string>
+</resources>
