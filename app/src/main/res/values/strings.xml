@@ -1,5 +1,27 @@
 <resources>
     <string name="app_name">First</string>
     <string name="center_text">Hello from PSM</string>
-    <string name="Button">Tap me</string>
+    <string name="D11">AWS D1.1 2015</string>
+    <string name="w59">CSA W59–13 2013</string>
+    <string name="x11">X11</string>
+    <string name="x22">X22</string>
+    <string name="title_activity_d11">D11</string>
+    <string name="calc">Calculation</string>
+    <string name="back">Back</string>
+
+
+    <string name="test">test</string>
+    <string name="hint">Standard Hint</string>
+    <string name="title_activity_utinfo">UTinfoActivity</string>
+    <string name="awsCalcText">Project information</string>
+    <string name="client">Client :</string>
+    <string name="project">Project :</string>
+    <string name="component">Component :</string>
+    <string name="wjAWS">Weld joint AWS :</string>
+    <string name="wp">Welding process :</string>
+    <string name="RepNo">Report No. :</string>
+    <string name="Tdate">Test date :</string>
+    <string name="utInf">UT Information</string>
+    <string name="Firstpage">First page</string>
+
 </resources>
