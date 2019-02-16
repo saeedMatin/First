@@ -8,6 +8,11 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 import android.app.AlertDialog;
+import android.support.v7.app.AppCompatActivity;
+
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 
 public class MainActivity extends Activity {
 
@@ -15,7 +20,16 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        MobileAds.initialize(this,
+                getString(R.string.admob_app_id));
+// Find Banner ad
+        AdView mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        // Display Banner ad
+        mAdView.loadAd(adRequest);
+
     }
+
     public void onButtonTap(View v){
         Toast myToast = Toast.makeText(
                 getApplicationContext(),

@@ -209,6 +209,7 @@
             <requestFocus />
         </EditText>
     </LinearLayout>
+
     <LinearLayout
         android:id="@+id/layout2"
         android:layout_width="match_parent"
@@ -216,6 +217,7 @@
         android:layout_below="@+id/b7"
         android:layout_marginTop="10dp"
         android:orientation="vertical">
+
         <Button
             android:id="@+id/utInfo"
             android:layout_width="match_parent"
@@ -225,6 +227,7 @@
             android:text="@string/utInf"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
+
         <Button
             android:id="@+id/back"
             android:layout_width="match_parent"
@@ -234,6 +237,7 @@
             android:text="@string/back"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
+
         <Button
             android:id="@+id/FirstPage"
             android:layout_width="match_parent"
@@ -243,6 +247,24 @@
             android:text="@string/Firstpage"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
+
+
     </LinearLayout>
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/layout2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/admob_banner_id"
+        ads:layout_constraintBottom_toBottomOf="parent"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintStart_toStartOf="parent" />
 
 </RelativeLayout>

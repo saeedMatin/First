@@ -10,14 +10,23 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+
 public class AWSActivity extends Activity {
     //AWSView awsView;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_aws);
-        //awsView = new AWSView(this);
-        //setContentView(awsView);
+        MobileAds.initialize(this,
+                getString(R.string.admob_app_id));
+// Find Banner ad
+        AdView mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        // Display Banner ad
+        mAdView.loadAd(adRequest);
     }
     @Override
     public void onBackPressed() {
